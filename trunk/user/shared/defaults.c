@@ -519,7 +519,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ip6_lan_sfpe", "4352" }, // 0x1100
 
 	{ "upnp_enable_x", "1" },
-	{ "upnp_proto", "0" },
+	{ "upnp_proto", "2" },
 	{ "upnp_secure", "1" },
 	{ "upnp_clean_min", "10" },
 	{ "upnp_clean_int", "600" },
