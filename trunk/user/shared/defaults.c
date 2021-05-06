@@ -519,8 +519,8 @@ struct nvram_pair router_defaults[] = {
 	{ "ip6_lan_sfpe", "4352" }, // 0x1100
 
 	{ "upnp_enable_x", "1" },
-	{ "upnp_proto", "0" },
-	{ "upnp_secure", "1" },
+	{ "upnp_proto", "2" },
+	{ "upnp_secure", "0" },
 	{ "upnp_clean_min", "10" },
 	{ "upnp_clean_int", "600" },
 	{ "upnp_iport_min", "21" },
@@ -1006,7 +1006,7 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "fw_syn_cook", "0" },
 	{ "fw_mac_drop", "0" },
-	{ "nf_nat_type", "2" },
+	{ "nf_nat_type", "1" },
 	{ "nf_nat_loop", "1" },
 #if (BOARD_RAM_SIZE > 128)
 	{ "nf_max_conn", "32768" },
