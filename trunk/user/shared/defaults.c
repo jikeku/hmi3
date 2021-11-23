@@ -70,7 +70,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_gateway", "0.0.0.0" },		/* WAN gateway */
 	{ "wan_dnsenable_x", "0" },
 	{ "wan_dns1_x", "114.114.114.114" },
-	{ "wan_dns2_x", "115.115.115.115" },
+	{ "wan_dns2_x", "114.114.115.115" },
 	{ "wan_dns3_x", "223.5.5.5" },
 	{ "wan_hostname", "" },			/* WAN hostname */
 	{ "wan_vci", "" },			/* WAN vendor class identifier (OPT-60) */
@@ -637,7 +637,7 @@ struct nvram_pair router_defaults[] = {
 	{ "backup_server", "nil" },
 	{ "udp_relay_server", "nil" },
 	{ "ss_threads", "0" },
-	{ "ss_run_mode", "gfw" },
+	{ "ss_run_mode", "router" },
 	{ "pdnsd_enable", "0" },
 	{ "s_dports", "0" },
 	{ "ssp_local_port", "1080" },
@@ -957,7 +957,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ether_uport", "0" },		/* WAN port in AP mode is static upstream by default */
 	{ "ether_m2u", "2" },
 	{ "ether_green", "1" },
-	{ "ether_eee", "0" },
+	{ "ether_eee", "1" },
 #if defined(USE_RTL8367)
 	{ "ether_jumbo", "1" },
 #else
@@ -1002,7 +1002,7 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "sw_nat_mode", "0" },
 #if defined(USE_SFE)
-	{ "sfe_enable", "2" },
+	{ "sfe_enable", "0" },
 #endif
 	{ "fw_syn_cook", "0" },
 	{ "fw_mac_drop", "0" },
